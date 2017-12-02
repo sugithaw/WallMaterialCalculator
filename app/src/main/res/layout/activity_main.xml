@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Sugita Wiguna on 12/3/17 12:34 AM
+  ~ Copyright (c) 2017. All rights reserved.
+  ~
+  ~ Last modified 12/3/17 12:16 AM
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.iak.wallmaterialcalculator.MainActivity">
+
+    <ImageView
+        android:id="@+id/appImage"
+        android:layout_width="@dimen/image"
+        android:layout_height="@dimen/image"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/arcitech"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:gravity="center_horizontal"
+        android:text="Kalkulator Bangunan" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top"
+        android:stretchColumns="*"
+        android:layout_gravity="center">
+
+        <TableRow
+            android:id="@+id/TableRow01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_brick_wall"
+                android:text="Tembok"
+                android:id="@+id/btnWall"/>
+            <Button
+                android:id="@+id/btnFloor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_floor"
+                android:text="Lantai"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TableRow02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnRoof"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_roof"
+                android:text="Atap"/>
+            <Button
+                android:id="@+id/btnWood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_log"
+                android:text="Kayu"/>
+
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
